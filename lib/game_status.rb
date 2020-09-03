@@ -16,13 +16,15 @@ WIN_COMBINATIONS = [
 ]
 
 
+$win_symbol = nil
+
+
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     pos_1 = board[combination[0]]
     pos_2 = board[combination[1]]
     pos_3 = board[combination[2]]
     
-    p combination
     return combination if winning_combo?([pos_1, pos_2, pos_3])
   end
   
@@ -57,7 +59,7 @@ end
 
 
 def winner(board)
-  won?(board)
+  won?(
 end
 
 
