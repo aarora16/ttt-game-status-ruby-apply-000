@@ -26,9 +26,7 @@ def won?(board)
     pos_3 = board[ind_3]
     
     if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-      arr.push(ind_1)
-      arr.push(ind_2)
-      arr.push(ind_3)
+      arr = [ind_1, ind_2, ind_3]
     else
       false
     end
