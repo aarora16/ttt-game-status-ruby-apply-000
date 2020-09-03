@@ -25,7 +25,7 @@ def won?(board)
     pos_2 = board[ind_2]
     pos_3 = board[ind_3]
     
-    return combination if ind_1 == "X" && ind_2 == "X" && ind_3 == "X"
+    return combination if winning_combo?(combination)
     # return combination if ind_1 == "O" && ind_2 == "O" && ind_3 == "O"
     return false
         
