@@ -29,7 +29,11 @@ def won?(board)
     return false
         
     
- 
+    # if ind_1 == "X" && ind_2 == "X" && ind_3 == "X"
+    #   return combination
+    # else
+    #   return false
+    # end
   end
 end
 
