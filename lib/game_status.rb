@@ -18,6 +18,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
+    win_ind_1 = combination[0]
+    wind_ind_2
     # p combination
     return combination if winning_combo?(combination)
   end
