@@ -15,7 +15,6 @@ WIN_COMBINATIONS = [
   [6,4,2]
 ]
 def won?(board)
-  arr = []
   for combination in WIN_COMBINATIONS
     ind_1 = combination[0]
     ind_2 = combination[1]
@@ -26,10 +25,9 @@ def won?(board)
     pos_3 = board[ind_3]
     
     if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-      arr = [ind_1, ind_2, ind_3]
+      combination
     else
       false
     end
   end
-  arr
 end
