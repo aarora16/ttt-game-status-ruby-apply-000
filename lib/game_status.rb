@@ -60,7 +60,9 @@ end
 
 
 def winner(board)
-  p @@win_symbol
+  won?(board)
+  
+  return @@win_symbol
 end
 
 winner([])
