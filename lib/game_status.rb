@@ -43,7 +43,7 @@ def winning_combo?(combo)
   if unique.size == 1 && unique[0] != " "
     return true
   end
-  false
+  return false
 end
   
 
