@@ -33,7 +33,7 @@ def winning_combo?(combo)
   return false
 end
   
-
+won?(board)
 
 
 
