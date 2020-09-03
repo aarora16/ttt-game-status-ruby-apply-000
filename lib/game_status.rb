@@ -1,9 +1,10 @@
-# Helper Method
+# Authored by Anshul Arora
+
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-# Define your WIN_COMBINATIONS constant
+
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -14,7 +15,6 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
 ]
-
 
 $win_symbol = nil
 
@@ -62,7 +62,8 @@ end
 def winner(board)
   $win_symbol = nil
   won?(board)
-  $win_symbol
+  
+  return $win_symbol
 end
 
 
