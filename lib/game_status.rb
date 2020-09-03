@@ -22,6 +22,7 @@ def won?(board)
     pos_2 = board[combination[1]]
     pos_3 = board[combination[2]]
     
+    p combination
     return combination if winning_combo?([pos_1, pos_2, pos_3])
   end
   
