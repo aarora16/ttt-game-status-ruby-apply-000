@@ -36,7 +36,7 @@ def winning_combo?(combo, board)
   end
   return false
 end
-p won?(["X", "X", " ", "O", "O", " ", "X", "X", "X"])
+
 
 
 
