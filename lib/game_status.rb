@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 
-$win_symbol = ""
+$win_symbol = nil
 
 
 def won?(board)
@@ -36,6 +36,7 @@ def winning_combo?(moves)
   unique = moves.uniq
   
   if unique.size == 1 && unique[0] != " "
+    $win_symbol = unique[0]
     return true
   end
   
@@ -59,7 +60,8 @@ end
 
 
 def winner(board)
-  won?(
+  won?(board)
+  $win_symbol
 end
 
 
