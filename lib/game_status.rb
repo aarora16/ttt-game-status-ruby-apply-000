@@ -60,6 +60,7 @@ end
 
 
 def winner(board)
+  $win_symbol = nil
   won?(board)
   $win_symbol
 end
