@@ -38,7 +38,9 @@ def won?(board)
   end
 end
 
-def winning_combo?
+def winning_combo?(combo)
+  
+  
 
 
 
