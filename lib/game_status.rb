@@ -65,7 +65,7 @@ def winner(board)
   return @@win_symbol
 end
 
-winner([])
+
 
 
 
