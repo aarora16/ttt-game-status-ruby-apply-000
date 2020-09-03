@@ -24,8 +24,7 @@ def won?(board)
   return false
 end
 
-def winning_combo?(combo)
-  p combo + ":" + 
+def winning_combo?(combo, board)
   unique = combo.uniq
   if unique.size == 1 && unique[0] != " "
     return true
