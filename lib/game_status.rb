@@ -14,6 +14,12 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [6,4,2]
 ]
+
+def won?(board)
+  
+end
+
+=begin
 def won?(board)
   for combination in WIN_COMBINATIONS do
     ind_1 = combination[0]
@@ -28,3 +34,5 @@ def won?(board)
     false
   end
 end
+=end
+
