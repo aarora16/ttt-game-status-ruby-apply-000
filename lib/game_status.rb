@@ -32,7 +32,6 @@ def won?(board)
   end
 end
 
-=begin
 def won?(board)
   for combination in WIN_COMBINATIONS do
     ind_1 = combination[0]
