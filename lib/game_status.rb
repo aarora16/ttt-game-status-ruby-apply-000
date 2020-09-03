@@ -42,7 +42,7 @@ end
 # return true if every space on board is filled with "X" or "O" else return false
 def full?(board)
   board.each do |move|
-    if move != " "
+    if move != " " || nil
       return true
     end
   end
