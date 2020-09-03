@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 
-WINNER = nil
+winner = nil
 
 
 def won?(board)
@@ -36,7 +36,7 @@ def winning_combo?(moves)
   unique = moves.uniq
   
   if unique.size == 1 && unique[0] != " "
-    WINNER = unique[0]
+    winner = unique[0]
     return true
   end
   
@@ -60,7 +60,7 @@ end
 
 
 def winner?(board)
-  return WINNER
+  return winner
 end
 
 
