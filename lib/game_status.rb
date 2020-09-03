@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [
 ]
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
+    arr = []
     ind_1 = combination[0]
     ind_2 = combination[1]
     ind_3 = combination[2]
@@ -25,7 +26,7 @@ def won?(board)
     pos_3 = board[ind_3]
     
     if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-      combination
+      return combination
     else
       false
     end
