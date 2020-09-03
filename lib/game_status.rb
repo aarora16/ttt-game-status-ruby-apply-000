@@ -23,20 +23,30 @@ def won?(board)
     pos_3 = board[combination[2]]
     
     return combination if winning_combo?([pos_1, pos_2, pos_3])
-    # return combination if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
   end
+  
   return false
 end
+
 
 def winning_combo?(moves)
   unique = moves.uniq
+  
   if unique.size == 1 && unique[0] != " "
     return true
   end
+  
   return false
 end
 
-def 
+# return true if every space on board is filled with "X" or "O" else return false
+def full?(board)
+  board.each do |move|
+    if move != " "
+      return true
+    end
+  end
+end
 
 
 
