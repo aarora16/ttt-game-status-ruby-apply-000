@@ -16,9 +16,6 @@ WIN_COMBINATIONS = [
 ]
 
 
-@@win_symbol = nil
-
-
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     pos_1 = board[combination[0]]
@@ -36,7 +33,6 @@ def winning_combo?(moves)
   unique = moves.uniq
   
   if unique.size == 1 && unique[0] != " "
-    @@win_symbol = unique[0]
     return true
   end
   
@@ -62,7 +58,6 @@ end
 def winner(board)
   won?(board)
   
-  return @@win_symbol
 end
 
 
