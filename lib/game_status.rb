@@ -32,7 +32,7 @@ def winning_combo?(combo)
   end
   return false
 end
-
+won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
 
 
 
