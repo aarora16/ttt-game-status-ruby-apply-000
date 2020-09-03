@@ -16,7 +16,20 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+  win_condition = WIN_COMBINATIONS.each do |combo|
+    ind_1 = combo[0]
+    ind_2 = combo[1]
+    ind_3 = combo[2]
+    
+    pos_1 = board[ind_1]
+    pos_2 = board[ind_2]
+    pos_3 = board[ind_3]
+    if ind_1 == "X" && ind_2 == "X" && ind_3 == "X"
+      combo
+    else
+      false
+    end
+  end  
 end
 
 =begin
