@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
-    p combination
+    # p combination
     return combination if winning_combo?(combination)
   end
   return false
@@ -31,7 +31,7 @@ def winning_combo?(combo)
   end
   return false
 end
-won?(["X", "X", " ", "O", "O", " ", "X", "X", "X"])
+p won?(["X", "X", " ", "O", "O", " ", "X", "X", "X"])
 
 
 
