@@ -19,7 +19,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     win_ind_1 = combination[0]
-    wind_ind_2
+    win_ind_2 = combination[1]
+    win_ind_3 = comination[2]
+    
+    pos_1 = board[win_ind_1]
     # p combination
     return combination if winning_combo?(combination)
   end
