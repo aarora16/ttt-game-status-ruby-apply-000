@@ -24,10 +24,7 @@ def won?(board)
     pos_2 = board[ind_2]
     pos_3 = board[ind_3]
     
-    if pos_1 == "X" && pos_2 == "X" && pos_3 == "X"
-      break
-    else
-      false
-    end
+    break if ind_1 == "X" && ind_2 == "X" && ind_3 == "X"
+    
   end
 end
