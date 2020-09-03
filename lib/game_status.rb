@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 
-@@win_symbol = false
+@@win_symbol = nil
 
 
 def won?(board)
