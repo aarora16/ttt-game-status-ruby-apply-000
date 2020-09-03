@@ -19,24 +19,6 @@ def won?(board)
   WIN_COMBINATIONS.each do |combination|
     return combination if winning_combo?(combination)
     return false
-    
-    # ind_1 = combination[0]
-    # ind_2 = combination[1]
-    # ind_3 = combination[2]
-    
-    # pos_1 = board[ind_1]
-    # pos_2 = board[ind_2]
-    # pos_3 = board[ind_3]
-    
-    # return combination if winning_combo?(combination)
-    # return false
-        
-    
-    # if ind_1 == "X" && ind_2 == "X" && ind_3 == "X"
-    #   return combination
-    # else
-    #   return false
-    # end
   end
 end
 
