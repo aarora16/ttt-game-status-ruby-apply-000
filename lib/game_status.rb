@@ -15,6 +15,11 @@ WIN_COMBINATIONS = [
   [6,4,2]
 ]
 
+def temp()
+  WIN_COMBINATIONS.each do |combination|
+    p combination
+  end
+end
 def won?(board)
   WIN_COMBINATIONS.each do |combination|
     p combination
@@ -46,7 +51,7 @@ def winning_combo?(combo)
   return false
 end
 
-won?(board)
+
   
 
 
