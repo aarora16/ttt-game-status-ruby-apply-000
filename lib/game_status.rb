@@ -45,6 +45,8 @@ def winning_combo?(combo)
   end
   return false
 end
+
+won?(board)
   
 
 
