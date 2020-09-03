@@ -39,10 +39,16 @@ def winning_combo?(moves)
   return false
 end
 
-# return true if every space on board is filled with "X" or "O" else return false
+
 def full?(board)
   return board.count("X") + board.count("O") == 9
 end
+
+# 
+def draw?(board)
+  return full?(board) && !won?(board)
+end
+
 
 
 
